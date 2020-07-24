@@ -18,3 +18,19 @@ $('.navbar-toggler').click(function () { //when navbar-toggler is clicked
         $("nav.navbar").toggleClass("solid-toggle"); //add the solid class to navbar
     }
 });
+
+/*========== COLLAPSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
+$(document).on('click', 'a[href^="#"]', function (event) { //when link with "#" clicked
+  event.preventDefault(); //prevent default click event
+  $('.navbar-toggler').addClass('collapsed'); //add collapsed class to toggler
+  $('#navbarResponsive').removeClass('show'); //remove class show from navbar
+
+  setTimeout(function () { //delay execution of the following    
+    $('.navbar').removeClass('solid-toggle'); //remove class solid-toggle from navbar     
+  }, 300); //delay 300ms
+
+  $('html, body').animate({ //animate window scrolling (on click of "#" link)
+      scrollTop: $($.attr(this, 'href')).offset().top //when scrolling to link destination
+  }, 1000); //at animated window speed of 1000ms
+});
+
