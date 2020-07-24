@@ -194,3 +194,131 @@ button {
     text-transform: uppercase;
     padding-bottom: .4rem;
   }
+
+  /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+/*-- Team Light Background Image --*/
+.fixed-light {
+    background-image: url('../img/fixed/office.jpg');
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  .light {
+    background-color: rgba( 255, 255, 255, .75);
+    padding: 5rem 0;
+    z-index: 1000!important;
+  }
+  .owl-stage {
+    display: flex;
+  }
+  .card {
+    height: 100%;
+    border-radius: 0;
+    margin: 0 1rem;
+    text-align: center;
+    border: .1rem solid rgba(0, 0, 0, .075);
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+    transition: transform .4s ease;
+    z-index: 1000!important;
+  }
+  .card:hover {
+    transform: scale(.95);
+  }
+  ul.social {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    max-width: 8rem;
+  }
+  ul.social li {
+    display: inline;
+    padding-right: 1rem;
+  }
+  .card a {
+    color: #1ebba3;
+  }
+  .card a:hover {
+    color: #505962;
+  }
+  button.owl-dot.active span,
+  button.owl-dot:hover span {
+    background: #1ebba3!important;
+  }
+  
+  /*============= CONTACT SECTION =============*/
+
+.footer {
+    background: url('../img/footer/footer.jpg') no-repeat;
+    /*background-color: #40474e;*/
+    background-size: cover;
+    color: white;
+  }
+  .footer .row.outer {
+    background-color: rgba(57, 63, 70, 0.85);
+    padding: 1rem 2rem 3rem;
+  }
+  .footer img {
+    height: 2rem;
+    margin: 1.5rem 0;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer ul.social {
+    float: left;
+  }
+  .footer .social a:hover {
+    color: #1ebba3!important;
+  }
+  .footer h3 {
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+  }
+  
+  /*-- Contact Form --*/
+  .form-group {
+    margin-bottom: 1.3rem;
+  }
+  .form-control {
+    background-color: #53595f;
+    border-radius: 0;
+    border: .15rem solid #666b71;
+    color: white!important;
+    font-size: 1.1rem;
+  }
+  .form-control:focus {
+    background: #53595f;
+    border: .15rem solid #93979b;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #b2b5b8!important;
+  }
+  input.btn {
+    cursor: pointer;
+  }
+  .controls input:focus,
+  .controls textarea:focus { /*-- Remove Element Outlines in Contact Form --*/
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+  }
+  
+  /*-- Socket --*/
+  hr.socket {
+    border-top: .2rem solid #666b71;
+    width: 100%;
+  }
+  
