@@ -57,3 +57,17 @@ $(document).ready(function () { //when document(DOM) loads completely
         }
     });
 });
+
+
+/*========== TOP SCROLL BUTTON ==========*/
+$(document).ready(function() { //when document(DOM) loads completely
+    $(window).scroll(function() { //when webpage is scrolled
+      if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
+        $('.top-scroll').fadeIn(); //display element with class 'top-scroll'
+      } else { //if not
+        $('.top-scroll').fadeOut(); //hide element under 500 px
+      }
+    });
+  });
+  
+  
