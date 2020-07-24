@@ -160,42 +160,48 @@ button {
     font-size: .9rem;
     text-transform: uppercase;
     margin: 1rem;
-  }
-  .btn-nuno {
+}
+
+.btn-nuno {
     border-color: #1EBBA3;
     background-color: #1EBBA3;
     color: white;
-  }
-  .btn-nuno:hover,
-  .btn-nuno:focus {
+}
+
+.btn-nuno:hover,
+.btn-nuno:focus {
     border-color: #189582;
     background-color: #189582;
     color: white;
-  }
-  h3.heading {
+}
+
+h3.heading {
     font-size: 1.9rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.9rem;
-  }
-  .heading-underline {
+}
+
+.heading-underline {
     width: 3rem;
     height: .2rem;
     background-color: #1EBBA3;
     margin: 0 auto 2rem;
-  }
-  .feature span {
+}
+
+.feature span {
     color: #1EBBA3;
     margin-bottom: .6rem;
-  }
-  .feature h3 {
+}
+
+.feature h3 {
     font-size: 1.3rem;
     text-transform: uppercase;
     padding-bottom: .4rem;
-  }
+}
 
-  /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
 
 /*-- Team Light Background Image --*/
 .fixed-light {
@@ -209,18 +215,21 @@ button {
     background-size: cover;
     background-position: center center;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     will-change: transform;
-  }
-  .light {
-    background-color: rgba( 255, 255, 255, .75);
+}
+
+.light {
+    background-color: rgba(255, 255, 255, .75);
     padding: 5rem 0;
-    z-index: 1000!important;
-  }
-  .owl-stage {
+    z-index: 1000 !important;
+}
+
+.owl-stage {
     display: flex;
-  }
-  .card {
+}
+
+.card {
     height: 100%;
     border-radius: 0;
     margin: 0 1rem;
@@ -228,100 +237,118 @@ button {
     border: .1rem solid rgba(0, 0, 0, .075);
     box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
     transition: transform .4s ease;
-    z-index: 1000!important;
-  }
-  .card:hover {
+    z-index: 1000 !important;
+}
+
+.card:hover {
     transform: scale(.95);
-  }
-  ul.social {
+}
+
+ul.social {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
     font-size: 1.5rem;
     max-width: 8rem;
-  }
-  ul.social li {
+}
+
+ul.social li {
     display: inline;
     padding-right: 1rem;
-  }
-  .card a {
+}
+
+.card a {
     color: #1ebba3;
-  }
-  .card a:hover {
+}
+
+.card a:hover {
     color: #505962;
-  }
-  button.owl-dot.active span,
-  button.owl-dot:hover span {
-    background: #1ebba3!important;
-  }
-  
-  /*============= CONTACT SECTION =============*/
+}
+
+button.owl-dot.active span,
+button.owl-dot:hover span {
+    background: #1ebba3 !important;
+}
+
+/*============= CONTACT SECTION =============*/
 
 .footer {
     background: url('../img/footer/footer.jpg') no-repeat;
     /*background-color: #40474e;*/
     background-size: cover;
     color: white;
-  }
-  .footer .row.outer {
+}
+
+.footer .row.outer {
     background-color: rgba(57, 63, 70, 0.85);
     padding: 1rem 2rem 3rem;
-  }
-  .footer img {
+}
+
+.footer img {
     height: 2rem;
     margin: 1.5rem 0;
-  }
-  .footer a {
+}
+
+.footer a {
     color: white;
     text-decoration: none;
-  }
-  .footer ul.social {
+}
+
+.footer ul.social {
     float: left;
-  }
-  .footer .social a:hover {
-    color: #1ebba3!important;
-  }
-  .footer h3 {
+}
+
+.footer .social a:hover {
+    color: #1ebba3 !important;
+}
+
+.footer h3 {
     text-transform: uppercase;
     margin: 1.5rem 0;
-  }
-  
-  /*-- Contact Form --*/
-  .form-group {
+}
+
+/*-- Contact Form --*/
+.form-group {
     margin-bottom: 1.3rem;
-  }
-  .form-control {
+}
+
+.form-control {
     background-color: #53595f;
     border-radius: 0;
     border: .15rem solid #666b71;
-    color: white!important;
+    color: white !important;
     font-size: 1.1rem;
-  }
-  .form-control:focus {
+}
+
+.form-control:focus {
     background: #53595f;
     border: .15rem solid #93979b;
-  }
-  .form-group input::placeholder,
-  .form-group textarea::placeholder {
-    color: #b2b5b8!important;
-  }
-  input.btn {
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b2b5b8 !important;
+}
+
+input.btn {
     cursor: pointer;
-  }
-  .controls input:focus,
-  .controls textarea:focus { /*-- Remove Element Outlines in Contact Form --*/
+}
+
+.controls input:focus,
+.controls textarea:focus {
+    /*-- Remove Element Outlines in Contact Form --*/
     outline: 0 !important;
     -webkit-appearance: none;
     box-shadow: none !important;
-  }
-  
-  /*-- Socket --*/
-  hr.socket {
+}
+
+/*-- Socket --*/
+hr.socket {
     border-top: .2rem solid #666b71;
     width: 100%;
-  }
-  
+}
+
 
 /*============= TOP SCROLL =============*/
 
@@ -330,16 +357,122 @@ button {
     height: 1.7rem;
     color: #53595f;
     background: white;
-  }
-  a.top-scroll {
+}
+
+a.top-scroll {
     right: 1.2rem;
     bottom: 1.2rem;
     position: fixed;
     opacity: .3;
     z-index: 1000;
     display: none;
-  }
-  a.top-scroll:hover {
+}
+
+a.top-scroll:hover {
     opacity: .5;
-  }
-  
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+    .caption h1 {
+        font-size: 3.5rem;
+        letter-spacing: .2rem;
+        padding-bottom: .8rem;
+    }
+
+    .caption h3 {
+        font-size: 2.2rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .btn-lg {
+        padding: .7rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .clients img {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+    .caption h1 {
+        font-size: 2.7rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+
+    .caption h3 {
+        font-size: 1.7rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .btn-lg {
+        padding: .6rem 1.1rem;
+        font-size: 1rem;
+    }
+
+    #features h1 {
+        font-size: 2rem;
+    }
+
+    .fixed-dark {
+        background-image: url('../img/fixed/apple-mobile.jpg');
+    }
+
+    .fixed-light {
+        background-image: url('../img/fixed/office-mobile.jpg');
+    }
+
+    .footer {
+        background: url('../img/footer/footer-mobile.jpg') no-repeat;
+    }
+
+    .top-scroll {
+        display: none !important;
+    }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+    .caption h1 {
+        font-size: 1.9rem;
+        letter-spacing: .1rem;
+        padding-bottom: .4rem;
+    }
+
+    .caption h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .btn-lg {
+        padding: .4rem .9rem;
+        font-size: .9rem;
+    }
+}
+
+/*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+    .row {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+/*-- Don't modify waypoints CSS below,
+  this is required for waypoints to work --*/
+.os-animation {
+    opacity: 0;
+    margin: 0 !important;
+    max-width: 100%;
+}
+
+.os-animation.animated {
+    opacity: 1;
+}
