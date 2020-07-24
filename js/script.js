@@ -60,14 +60,21 @@ $(document).ready(function () { //when document(DOM) loads completely
 
 
 /*========== TOP SCROLL BUTTON ==========*/
-$(document).ready(function() { //when document(DOM) loads completely
-    $(window).scroll(function() { //when webpage is scrolled
-      if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
-        $('.top-scroll').fadeIn(); //display element with class 'top-scroll'
-      } else { //if not
-        $('.top-scroll').fadeOut(); //hide element under 500 px
-      }
+$(document).ready(function () { //when document(DOM) loads completely
+    $(window).scroll(function () { //when webpage is scrolled
+        if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
+            $('.top-scroll').fadeIn(); //display element with class 'top-scroll'
+        } else { //if not
+            $('.top-scroll').fadeOut(); //hide element under 500 px
+        }
     });
-  });
-  
-  
+});
+
+
+/*========== MAKE ALL ANIMATION "FADEINUP" ON MOBILE ==========*/
+$(document).ready(function () { //when document(DOM) loads completely
+    if ($(window).width() < 768) { //if the window is less than 768px
+        $("div").attr('data-animation', 'fadeInUp'); //any div with the "data-animation" attribute should have it's value (animation style) changed to "fadeInUp"
+        $("div").attr('data-delay', '0s'); //remove data delay
+    }
+});
