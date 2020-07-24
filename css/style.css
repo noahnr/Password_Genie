@@ -11,3 +11,37 @@ body {
     font-family: 'Lato', sans-serif;
     color: #505962;
 }
+
+/*-- Turquoise Theme Color Text --*/
+.text-nuno {
+    color: #1EBBA3;
+}
+
+/*-- Nav Scrolling Offset --*/
+.offset:before {
+    content: "";
+    display: block;
+    height: 4.05rem;
+    margin-top: -4.05rem;
+}
+
+/*-- Optional: Add Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+a:focus,
+button:focus {
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a,
+.btn,
+button {
+    cursor: pointer !important;
+    transition: all .4s ease;
+}
