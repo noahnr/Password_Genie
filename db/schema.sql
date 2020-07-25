@@ -1,13 +1,4 @@
-create table UserNameAndPasswordDemo
-(
-    U_Id int(10)
-    unsigned NOT NULL AUTO_INCREMENT,
-UserId varchar
-    (255) DEFAULT NULL,
-UserPassword varchar
-    (255) DEFAULT NULL,
-primary key
-    (U_Id),
-UNIQUE KEY `UserId`
-    (`UserId`)
-);
+-- Drops the blogger if it exists currently --
+DROP DATABASE IF EXISTS Sign_in;
+-- Creates the "blogger" database --
+CREATE DATABASE Sign_in;
