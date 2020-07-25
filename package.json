@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/noahnr/Password_Genie/issues"
   },
-  "homepage": "https://github.com/noahnr/Password_Genie#readme"
+  "homepage": "https://github.com/noahnr/Password_Genie#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
