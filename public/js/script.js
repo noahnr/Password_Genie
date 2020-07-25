@@ -34,6 +34,12 @@ $(document).on('click', 'a[href^="#"]', function (event) { //when link with "#" 
     }, 1000); //at animated window speed of 1000ms
 });
 
+/*========== BOUNCING DOWN ARROW ==========*/
+$(document).ready(function () { //when document(DOM) loads completely
+    $(window).scroll(function () { //on browser scroll
+        $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //make the opacity for the arrow class go from 1 to "-" (negative infinity) spanning 250px in height
+    });
+});
 
 /*========== MEET THE TEAM CAROUSEL ==========*/
 $(document).ready(function () { //when document(DOM) loads completely
