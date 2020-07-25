@@ -151,6 +151,25 @@ button {
     font-size: 1.1rem;
 }
 
+/*-- Bouncing Down Arrow --*/
+.arrow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+}
+
+a.down-arrow .svg-inline--fa {
+    color: white;
+    font-size: 2.2rem;
+    opacity: .3;
+}
+
+a.down-arrow .svg-inline--fa:hover {
+    opacity: .8;
+}
+
 /*============= FEATURES SECTION =============*/
 
 .btn-sm {
