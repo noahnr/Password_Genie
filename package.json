@@ -1,0 +1,20 @@
+{
+  "name": "password_genie",
+  "version": "1.0.0",
+  "description": "This is a web application that will allow users to create an account with their information, and be able to log in and store user information for any login credentials they could have!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahnr/Password_Genie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahnr/Password_Genie/issues"
+  },
+  "homepage": "https://github.com/noahnr/Password_Genie#readme"
+}
