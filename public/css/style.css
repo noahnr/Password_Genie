@@ -170,6 +170,20 @@ a.down-arrow .svg-inline--fa:hover {
     opacity: .8;
 }
 
+
+/*============= MODAL ==============*/
+
+.modal.fade {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    transform: translate(0);
+}
+
+
 /*============= FEATURES SECTION =============*/
 
 .btn-sm {
