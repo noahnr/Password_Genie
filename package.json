@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/noahnr/Password_Genie.git"
   },
-  "author": "",
+  "author": "Journey Cruz, Christopher Carreon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/noahnr/Password_Genie/issues"
@@ -21,7 +21,10 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "bcryptjs": "2.4.3",
     "express": "^4.17.1",
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.8.6"
   }
 }
