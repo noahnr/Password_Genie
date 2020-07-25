@@ -1,10 +1,10 @@
-var Password_Genie = require("password_genie");
+var password_genie = require("password_genie");
 var LocalStrategy = require("password_genie-local").Strategy;
 
 var db = require("../models");
 
 // Telling passport we want to use a Local Strategy. In other words, we want login with a username/email and password
-Password_Genie.use(new LocalStrategy(
+password_genie.use(new LocalStrategy(
   // Our user will sign in using an email, rather than a "username"
   {
     usernameField: "email"
@@ -37,13 +37,13 @@ Password_Genie.use(new LocalStrategy(
 // In order to help keep authentication state across HTTP requests,
 // Sequelize needs to serialize and deserialize the user
 // Just consider this part boilerplate needed to make it all work
-Password_Genie.serializeUser(function (user, cb) {
+password_genie.serializeUser(function (user, cb) {
   cb(null, user);
 });
 
-Password_Genie.deserializeUser(function (obj, cb) {
+password_genie.deserializeUser(function (obj, cb) {
   cb(null, obj);
 });
 
 // Exporting our configured passport
-module.exports = Password_Genie;
+module.exports = password_genie;
