@@ -99,13 +99,20 @@
 
         <!-- Start Landing Page Caption -->
         <div class="caption text-center text-light text-uppercase">
-
-            <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">Password<span
-                    class="text-nuno"> Genie</span></h1>
-            <h3 class="os-animation" data-animation="bounceInUp" data-delay=".8s"></h3>
-            <a class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="bounceInUp" data-delay="1s"
-                href="#features">Generate Random Password</a>
-
+            <div>
+                <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">Password<span
+                        class="text-nuno"> Genie</span></h1>
+            </div>
+            <br>
+            <div>
+                <textarea class="os-animation" data-animation="bounceInUp" data-delay=".8s" readonly
+                    id="passwordTxtArea" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+            </div>
+            <br>
+            <div>
+                <a class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="bounceInUp"
+                    data-delay="1s" id="generate" onClick="writePassword">Generate Random Password</a>
+            </div>
         </div>
         <!-- End Landing Page Caption -->
 
