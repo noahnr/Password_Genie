@@ -338,7 +338,8 @@ ul.social {
 
 ul.social li {
     display: inline;
-    padding-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .card a {
