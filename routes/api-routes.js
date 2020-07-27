@@ -1,6 +1,6 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
-var password_genie = require("../config/password_genie");
+var password_genie = require("../config/password_genie.js");
 
 module.exports = function (app) {
     // Using the passport.authenticate middleware with our local strategy.
