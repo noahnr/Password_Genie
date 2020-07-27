@@ -127,7 +127,7 @@ button {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 38%;
+    top: 30%;
     /* Change position of langing page text. */
     z-index: 1;
 }
@@ -144,6 +144,15 @@ button {
     text-shadow: .1rem .1rem .5rem black;
     padding-bottom: 2rem;
 }
+
+#passwordTxtArea {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 15px;
+    line-height: 15px;
+}
+
 
 .btn-lg {
     border-width: medium;
