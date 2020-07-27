@@ -7,7 +7,7 @@
 var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
-var password_genie = require("./config/password_genie");
+var passport = require("passport");
 
 /// Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
@@ -26,8 +26,8 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
-app.use(password_genie.initialize());
-app.use(password_genie.session());
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Requiring our routes
 require("./routes/html-routes.js")(app);
