@@ -6,6 +6,8 @@
 // =============================================================
 var express = require("express");
 var session = require("express-session");
+const handlebars = require("handlebars");
+const exphbs = require("express-handlebars");
 // Requiring passport as we've configured it
 var passport = require("passport");
 
@@ -25,6 +27,8 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(express.static("public"));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 // We need to use sessions to keep track of our user's login status
 app.use(session({
   secret: "keyboard cat",
