@@ -12,6 +12,14 @@ body {
     color: #505962;
 }
 
+/*-- Lato Thin --*/
+#latoThin {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: none;
+    bottom: 5%;
+    position: relative;
+}
 
 /*-- Turquoise Theme Color Text --*/
 .text-nuno {
