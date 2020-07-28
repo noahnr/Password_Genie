@@ -13,10 +13,10 @@ var passport = require("passport");
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
 // Set Handlebars.
-var exphbs = require("express-handlebars");
+// var exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ handlebars: "main" }));
-app.set("view engine", "handlebars");
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
