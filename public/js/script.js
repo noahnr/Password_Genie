@@ -34,6 +34,96 @@ $(document).on('click', 'a[href^="#"]', function (event) { //when link with "#" 
     }, 1000); //at animated window speed of 1000ms
 });
 
+/*========== PASSWORD GENERATOR ==========*/
+
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+    // password length validation
+    var isValid = false;
+    // while length is not within 8 and 128,  display length prompt
+    while (isValid == false) {
+        var lengthPrompt = prompt("How many characters would you like your password to be?");
+        var passwordLength = lengthPrompt;
+        console.log(passwordLength);
+        if (passwordLength > 7 && passwordLength < 129) {
+            isValid = true;
+        }
+    }
+
+    // prompt confirmation for each charcter types
+    var charTypeConfirmLC = confirm("Would you like to include lowercase letters?");
+    var charTypeConfirmUC = confirm("Would you like to include uppercase letters?");
+    var charTypeConfirmN = confirm("Would you like to use numbers in this password?");
+    var charTypeConfirmSC = confirm("Use special characters?");
+
+    function generatePassword() {
+        // define conditional character type strings
+        var lowercase = "abcdefghijklmnopqrstuvwxyz";
+        var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var numeric = "0123456789";
+        var specialCharacters = "!<>/?+#$%&";
+        var passwordString = "";
+
+        // initialize empty array for character type strings
+        characterArray = [];
+        // if LC selected, add LC charcter string (lowercase) 
+        if (charTypeConfirmLC === true) {
+            characterArray.push(lowercase);
+            console.log(charTypeConfirmLC)
+            passwordString += lowercase.charAt(Math.floor(Math.random() * lowercase.length));
+        }
+        // if UC
+        if (charTypeConfirmUC === true) {
+            characterArray.push(uppercase);
+            console.log(charTypeConfirmUC)
+            passwordString += uppercase.charAt(Math.floor(Math.random() * uppercase.length));
+        }
+        // if N
+        if (charTypeConfirmN === true) {
+            characterArray.push(numeric);
+            console.log(charTypeConfirmN)
+            passwordString += numeric.charAt(Math.floor(Math.random() * numeric.length));
+        }
+        // if SC
+        if (charTypeConfirmSC === true) {
+            characterArray.push(specialCharacters);
+            console.log(charTypeConfirmSC)
+            passwordString += specialCharacters.charAt(Math.floor(Math.random() * specialCharacters.length));
+        }
+        console.log(characterArray);
+        remainingCharCount = passwordLength - passwordString.length;
+        console.log(remainingCharCount)
+
+        // join conditional character strings to form character set (characters)
+        characters = characterArray.join('');
+
+        // add to passwordString from character set at random position while loop number <=  remaining password length
+        for (var i = 0, n = characters.length; i < remainingCharCount; i++) {
+            passwordString += characters.charAt(Math.floor(Math.random() * n));
+        }
+        return passwordString;
+    }
+    // select text area for password
+    var passwordText = document.querySelector("#passwordTxtArea");
+    // set password equal to returned value of generatePassword function
+    var password = generatePassword();
+    // set text area equal to password
+    passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+
+/*========== BOUNCING DOWN ARROW ==========*/
+$(document).ready(function () { //when document(DOM) loads completely
+    $(window).scroll(function () { //on browser scroll
+        $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //make the opacity for the arrow class go from 1 to "-" (negative infinity) spanning 250px in height
+    });
+});
+
 /*========== BOUNCING DOWN ARROW ==========*/
 $(document).ready(function () { //when document(DOM) loads completely
     $(window).scroll(function () { //on browser scroll

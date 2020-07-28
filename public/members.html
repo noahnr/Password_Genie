@@ -25,12 +25,17 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- Google Fonts Lato Thin -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- Modal: Login -->
+    <div class="modal fade os-animation" data-animation="fadeInDownBig" id="myModal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -50,7 +55,41 @@
                         <label for="psw"><b>Password:</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal: Create Account -->
+    <div class="modal fade os-animation" data-animation="fadeInDownBig" id="myModal2" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Create New Account</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p style="margin-bottom: 25px;">Fill in the provided text fields to get started.</p>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="psw"><b>Name: </b></label>
+                        <input type="password" placeholder="Enter Name" name="name" required>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="uname"><b>Username:</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="psw"><b>Password:</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -66,7 +105,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#home"><img src="" alt=""></a>
+                <a class="navbar-brand" href="#home"><img src="img/PasswordGenieLogo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
@@ -81,6 +120,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -99,13 +141,27 @@
 
         <!-- Start Landing Page Caption -->
         <div class="caption text-center text-light text-uppercase">
-
-            <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">Password<span
-                    class="text-nuno"> Genie</span></h1>
-            <h3 class="os-animation" data-animation="bounceInUp" data-delay=".8s"></h3>
-            <a class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="bounceInUp" data-delay="1s"
-                href="#features">Generate Random Password</a>
-
+            <div>
+                <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">Password<span
+                        class="text-nuno"> Generator</span></h1>
+            </div>
+            <br>
+            <div>
+                <textarea class="os-animation" data-animation="bounceInUp" data-delay=".8s" readonly
+                    id="passwordTxtArea" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+            </div>
+            <br>
+            <div>
+                <a class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="bounceInUp"
+                    data-delay="1s" id="generate" onClick="writePassword">Generate Random Password</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                <p id="latoThin">Securely store all of your passwords in one place.</p>
+            </div>
         </div>
         <!-- End Landing Page Caption -->
 
@@ -127,8 +183,10 @@
             <div class="col-11 col-md-10 col-lg-9">
                 <h1>Create an account to save your passwords in our secure database!</h1>
                 <p class="lead">Already have an account? Login.</p>
-                <a class="btn btn-secondary btn-sm" href="#contact">Register</a>
-                <!-- Button trigger modal -->
+                <!-- Button trigger modal: Create Account -->
+                <a><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal"
+                        data-target="#myModal2">Create Account</button></a>
+                <!-- Button trigger modal: Login -->
                 <a><button type="button" class="btn btn-nuno btn-sm" data-toggle="modal"
                         data-target="#myModal">Login</button></a>
             </div>
@@ -139,7 +197,7 @@
         <div class="jumbotron m-0 py-5">
 
             <div class="col-12 os-animation" data-animation="fadeInUp">
-                <h3 class="heading">Features</h3>
+                <h3 class="heading">How it Works</h3>
                 <div class="heading-underline"></div>
             </div>
 
@@ -178,7 +236,6 @@
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-play fa-stack-1x fa-inverse"
                                     data-fa-transform="shrink-3.5 right-1"></i>
-                                <!-- https://fontawesome.com/how-to-use/on-the-web/styling/power-transforms -->
                             </span>
                             <h3>Heading</h3>
                             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat ex vel
@@ -225,16 +282,10 @@
                                 vitae velit efficitur dictum.</p>
                         </div>
                     </div>
-
                 </div> <!-- End Row -->
             </div> <!-- End Container -->
-
         </div><!-- End Jumbotron -->
-
-
-    </div>
-    <!-- End of Features Section -->
-
+    </div><!-- End of Features Section -->
 
     <!-- Start Team Section -->
     <div id="team" class="offset">
@@ -256,34 +307,15 @@
                             <div class="card">
                                 <img src="img/nopic.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body">
-                                    <h4 class="font-weight-bold">Name 3</h4>
+                                    <h4 class="font-weight-bold">Name 2</h4>
                                     <h5 class="text-nuno">Web Developer</h5>
                                     <p class="border-top border-bottom py-3 my-3">Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit. Nam feugiat ex vel eros accumsan, vel imperdiet
                                         ante vestibulum. Praesent vitae mollis dui. Etiam nec diam vitae velit efficitur
                                         dictum.</p>
                                     <ul class="social">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div> <!-- End Card -->
-
-                            <div class="card">
-                                <img src="img/nopic.png" alt="" class="card-img-top rounded-0">
-                                <div class="card-body">
-                                    <h4 class="font-weight-bold">Name 1</h4>
-                                    <h5 class="text-nuno">Web Developer</h5>
-                                    <p class="border-top border-bottom py-3 my-3">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Nam feugiat ex vel eros accumsan, vel imperdiet
-                                        ante vestibulum. Praesent vitae mollis dui. Etiam nec diam vitae velit efficitur
-                                        dictum.</p>
-                                    <ul class="social">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -299,9 +331,25 @@
                                         ante vestibulum. Praesent vitae mollis dui. Etiam nec diam vitae velit efficitur
                                         dictum.</p>
                                     <ul class="social">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- End Card -->
+
+                            <div class="card">
+                                <img src="img/nopic.png" alt="" class="card-img-top rounded-0">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Name 2</h4>
+                                    <h5 class="text-nuno">Web Developer</h5>
+                                    <p class="border-top border-bottom py-3 my-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Nam feugiat ex vel eros accumsan, vel imperdiet
+                                        ante vestibulum. Praesent vitae mollis dui. Etiam nec diam vitae velit efficitur
+                                        dictum.</p>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
