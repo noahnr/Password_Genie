@@ -32,6 +32,8 @@ var connection = mysql.createConnection({
   database:'password_genie'
 });
 }
+connection.connect();
+
 app.use(express.urlencoded({
   extended: true
 }));
