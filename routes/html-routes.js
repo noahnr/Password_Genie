@@ -24,3 +24,4 @@ module.exports = function (app) {
         res.render(path.join(__dirname, "/views/layouts/main"));
     });
 };
+
