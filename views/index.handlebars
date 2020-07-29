@@ -90,7 +90,7 @@
                         <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
             </div>
@@ -152,11 +152,10 @@
             <h1>Create an account to save your passwords!</h1>
             <p class="lead">Already have an account? Login.</p>
             <!-- Button trigger modal: Create Account -->
-            <a><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal2">Create
-                    Account</button></a>
+            <button type="button" onclick="window.location.href='/signup'" class="btn btn-secondary btn-sm">Create
+                    Account</button>
             <!-- Button trigger modal: Login -->
-            <a><button type="button" class="btn btn-nuno btn-sm" data-toggle="modal"
-                    data-target="#myModal">Login</button></a>
+            <button onclick="window.location.href='/login'" type="button" class="btn btn-nuno btn-sm">Login</button>
         </div>
     </div>
     <!-- End Theme Heading -->
