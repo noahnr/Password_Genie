@@ -466,6 +466,9 @@ a.top-scroll:hover {
 
 /*============= LOGIN PAGE ===========*/
 
+#space {
+    height: 150px;
+}
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 992px (lg) */

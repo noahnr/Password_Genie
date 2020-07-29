@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Password Genie</title>
+  <title>Password Genie | Login</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
@@ -14,15 +14,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Style.css -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- style.css -->
-  <link rel="stylesheet" href="css/style.css">
   <!-- Animate.css -->
   <link rel="stylesheet" href="css/animate.min.css">
-  <!-- Lightbox Image Gallery -->
-  <link rel="stylesheet" href="css/lightbox.min.css">
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
   <!-- Google Fonts Lato Thin -->
@@ -30,17 +23,26 @@
 </head>
 
 <body>
+  <style>
+    body {
+      background-image: url("img/genielogin.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+  </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top solid">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home"><img src="img/PasswordGenieLogo.png" alt=""></a>
+      <a class="navbar-brand" href="/"><img src="img/PasswordGenieLogo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/#features">How does it work?</a>
+            <a class="nav-link" href="/signup">Create an Account</a>
           </li>
         </ul>
       </div>
@@ -49,28 +51,33 @@
   <!-- End Navigation -->
 
   <div class="container">
-    <div class="row">
-      <br>
-      <br>
-      <br>
+    <div id="space" class="row">
     </div>
-    <div class="row" id="loginForm">
+    <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
+        <h2 class="os-animation" data-animation="bounceInUp">Login</h2>
+        <br>
         <form class="login">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="exampleInputEmail1">Email
+              address:</label>
+            <br>
+            <input style="margin-top: 15px;" type="email" class="form-control" id="email-input" placeholder="Email">
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          <br>
+          <div class="form-group os-animation" class="os-animation" data-animation="bounceInUp" data-delay=".5s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".4s"
+              for="exampleInputPassword1">Password:</label>
+            <input style="margin-top: 15px;" type="password" class="form-control" id="password-input"
+              placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-default">Login</button>
+          <br>
+          <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp"
+            data-delay=".6s">Login</button>
         </form>
-        <br />
-        <p>Or sign up <a href="/signup">here</a></p>
+        <br>
+        <p class="os-animation" data-animation="bounceInUp" data-delay=".7s">New User? Create an account <a href="/signup">here.</a></p>
       </div>
     </div>
     <div class="col-md-3"></div>
@@ -86,16 +93,7 @@
   <script src="js/popper.min.js"></script>
   <!-- Waypoints -->
   <script src="js/jquery.waypoints.min.js"></script>
-  <!-- Font Awesome -->
-  <script src="js/all.min.js"></script>
-  <!-- Lightbox Image Gallery -->
-  <script src="js/lightbox.min.js"></script>
-  <!-- Owl Carousel -->
-  <script src="js/owl.carousel.min.js"></script>
-  <!-- jQuery CounterUp -->
-  <script src="js/jquery.counterup.min.js"></script>
-  <!-- Bootstrap Form Validator -->
-  <script src="js/validator.min.js"></script>
+
 </body>
 
 </html>
