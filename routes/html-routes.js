@@ -10,18 +10,18 @@ module.exports = function (app) {
         // If the user already has an account send them to the members page
         res.render("index")
     });
-    app.get("/members", function (req, res) {
+    app.get("/login", function (req, res) {
         // If the user already has an account send them to the members page
         if (req.user) {
-            res.redirect("/login");
+            res.redirect("/members");
         }
-        res.render(path.join(__dirname, "index"));
+        res.render("index");
     });
 
     // Here we've add our isAuthenticated middleware to this route.
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
-    app.get("/views/layouts/main.handlebars", isAuthenticated, function (req, res) {
-        res.render(path.join(__dirname, "/views/layouts/main"));
+    app.get("/members", isAuthenticated, function (req, res) {
+        res.render("members");
     });
-};
 
+};
