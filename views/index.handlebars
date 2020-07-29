@@ -12,19 +12,21 @@
                 <div>
                     <p style="margin-bottom: 25px;">Sign in to view your saved passwords</p>
                 </div>
-                <div style="margin-bottom: 10px;">
-                    <label for="uname"><b>Username:</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                </div>
-                <div style="margin-bottom: 10px;">
-                    <label for="psw"><b>Password:</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                </div>
+                <form class="login">
+                    <div style="margin-bottom: 10px;">
+                        <label for="uname"><b>Username:</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" id="emailInput" required>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="psw"><b>Password:</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="passwordInput" required>
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Login</button>
             </div>
+            </form>
         </div>
     </div>
 </div>
@@ -43,27 +45,28 @@
                 <div>
                     <p style="margin-bottom: 25px;">Fill in the provided text fields to get started.</p>
                 </div>
+                <form class="signup"></form>
                 <div style="margin-bottom: 10px;">
                     <label for="psw"><b>Name: </b></label>
                     <input type="password" placeholder="Enter Name" name="name" required>
                 </div>
                 <div style="margin-bottom: 10px;">
                     <label for="uname"><b>Username:</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input type="text" placeholder="Enter Username" name="uname" id="email-input" required>
                 </div>
                 <div style="margin-bottom: 10px;">
                     <label for="psw"><b>Password:</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="psw" id="password-input" required>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Login</button>
             </div>
+            </form>
         </div>
     </div>
 </div>
-
 <!-- Start Home Section -->
 <div id="home">
 
