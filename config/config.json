@@ -15,10 +15,6 @@
     },
     "production": {
         "use_env_variable": "JAWSDB_URL",
-        "username": "root",
-        "password": "Nr112098",
-        "database": "password_genie",
-        "host": "127.0.0.1",
         "dialect": "mysql"
     }
 }
