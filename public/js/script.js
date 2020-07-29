@@ -134,9 +134,9 @@ $(document).ready(function () { //when document(DOM) loads completely
 /*========== MEET THE TEAM CAROUSEL ==========*/
 $(document).ready(function () { //when document(DOM) loads completely
     $('#team-carousel').owlCarousel({ //owlCarousel settings
-        autoplay: true, //set to false to turn off autoplay and only use nav
+        autoplay: false, //set to false to turn off autoplay and only use nav
         autoplayHoverPause: true, //set to false to prevent pausing on hover
-        loop: true, //set to false to stop carousel after all slides shown
+        loop: false, //set to false to stop carousel after all slides shown
         autoplayTimeout: 8000, //time between transitions
         smartSpeed: 1200, //transition speed
         dotsSpeed: 1000, //transition speed when using dots/buttons
