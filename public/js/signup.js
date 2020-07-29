@@ -32,12 +32,12 @@ $(document).ready(function () {
                 email: email,
                 password: password
             })
-            .then(function (data) {
-                window.location.replace("/members");
-                // If there's an error, handle it by throwing up a bootstrap alert
+            .then(() => {
+              window.location.replace("/members");
+              // If there's an error, handle it by throwing up a bootstrap alert
             })
             .catch(handleLoginErr);
-    }
+        }
 
     function handleLoginErr(err) {
         $("#alert .msg").text(err.responseJSON);
