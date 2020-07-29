@@ -30,17 +30,25 @@
 </head>
 
 <body>
+  <style>
+    body {
+      background-image: url("img/genielogin.png");
+      background-size: cover;
+      position: relative;
+      color: white;
+    }
+  </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top solid">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home"><img src="img/PasswordGenieLogo.png" alt=""></a>
+      <a class="navbar-brand" href="/"><img src="img/PasswordGenieLogo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/#features">How does it work?</a>
+            <a class="nav-link" href="/signup">Create an Account</a>
           </li>
         </ul>
       </div>
@@ -49,15 +57,12 @@
   <!-- End Navigation -->
 
   <div class="container">
-    <div class="row">
-      <br>
-      <br>
-      <br>
+    <div id="space" class="row">
     </div>
     <div class="row" id="loginForm">
       <div class="col-md-3"></div>
       <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
+        <h2>Login</h2>
         <form class="login">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -67,10 +72,10 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-default">Login</button>
+          <button type="submit" class="btn btn-nuno btn-sm">Login</button>
         </form>
         <br />
-        <p>Or sign up <a href="/signup">here</a></p>
+        <p>New User? Create an account <a href="/signup">here</a></p>
       </div>
     </div>
     <div class="col-md-3"></div>
