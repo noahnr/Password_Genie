@@ -1,72 +1,3 @@
-<!-- Modal: Login -->
-<div class="modal fade os-animation" data-animation="fadeInDownBig" id="myModal" tabindex="-1" role="dialog"
-    aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Login</h4>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <p style="margin-bottom: 25px;">Sign in to view your saved passwords</p>
-                </div>
-                <form class="login">
-                    <form class="login">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="email-input" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="password-input" placeholder="Password">
-                        </div>
-
-                    </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-default">Login</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal: Create Account -->
-<div class="modal fade os-animation" data-animation="fadeInDownBig" id="myModal2" tabindex="-1" role="dialog"
-    aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Create New Account</h4>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <p style="margin-bottom: 25px;">Fill in the provided text fields to get started.</p>
-                </div>
-                <form class="signup">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="newEmailInput" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="newPasswordInput" placeholder="Password">
-                    </div>
-                    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                        <span class="sr-only">Error:</span> <span class="msg"></span>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-default">Sign Up</button>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Start Home Section -->
 <div id="home">
 
@@ -90,7 +21,7 @@
                         <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
             </div>
@@ -144,7 +75,7 @@
 <!-- End Home Section -->
 
 <!-- Start Features Section -->
-<div id="features" class="offset">
+<div class="offset">
 
     <!--Start Theme Heading -->
     <div class="row justify-content-center text-center py-4 os-animation" data-animation="fadeInUp">
@@ -152,17 +83,16 @@
             <h1>Create an account to save your passwords!</h1>
             <p class="lead">Already have an account? Login.</p>
             <!-- Button trigger modal: Create Account -->
-            <a><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal2">Create
-                    Account</button></a>
+            <button type="button" onclick="window.location.href='/signup'" class="btn btn-secondary btn-sm">Create
+                    Account</button>
             <!-- Button trigger modal: Login -->
-            <a><button type="button" class="btn btn-nuno btn-sm" data-toggle="modal"
-                    data-target="#myModal">Login</button></a>
+            <button onclick="window.location.href='/login'" type="button" class="btn btn-nuno btn-sm">Login</button>
         </div>
     </div>
     <!-- End Theme Heading -->
 
     <!-- Start Jumbotron -->
-    <div class="jumbotron m-0 py-5">
+    <div id="features" class="jumbotron m-0 py-5">
 
         <div class="col-12 os-animation" data-animation="fadeInUp">
             <h3 class="heading">How it Works</h3>
