@@ -2,47 +2,102 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Genie | Create Account</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <!-- Google Fonts Lato Thin -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <style>
+    body {
+      background-image: url("img/geniesignup.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+  </style>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top solid">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="img/PasswordGenieLogo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/#features">How does it work?</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+  <!-- End Navigation -->
+
   <div class="container">
+    <div style="height: 90px;" class="row">
+    </div>
     <div class="row">
+      <div class="col-md-3"></div>
       <div class="col-md-6 col-md-offset-3">
-        <h2>Sign Up Form</h2>
+        <h2  class="os-animation" data-animation="bounceInUp">Create An Account</h2>
+        <br>
         <form class="signup">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="nameInput">Name:</label>
+            <input style="margin-top: 15px;" type="name" class="form-control" id="name-input" placeholder="Name">
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          <br>
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".5s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".4s" for="exampleInputEmail1">Email address:</label>
+            <input style="margin-top: 15px;" type="email" class="form-control" id="email-input" placeholder="Email">
           </div>
+          <br>
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".7s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".6s" for="exampleInputPassword1">Password:</label>
+            <input style="margin-top: 15px;" type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <br>
           <div style="display: none" id="alert" class="alert alert-danger" role="alert">
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
-          <button type="submit" class="btn btn-default">Sign Up</button>
+          <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp" data-delay=".8s">Sign Up</button>
         </form>
         <br />
-        <p>Or log in <a href="/login">here</a></p>
+        <p class="os-animation" data-animation="bounceInUp" data-delay=".9s">Already have an account? <a href="/login">Login.</a></p>
       </div>
+      <div class="col-md-3"></div>
     </div>
+  </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/signup.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Popper JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
 
 </body>
 
