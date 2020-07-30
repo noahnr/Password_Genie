@@ -1,8 +1,9 @@
-"development": {
-    "username": "h37e8zi94goili53",
-    "password": "l6jwjn4u431jykg3",
+{
+    "development": {
+    "username": "root",
+    "password": "rootPASS7",
     "database": "password_genie",
-    "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "host": "localhost",
     "dialect": "mysql"
 },
 "test": {
