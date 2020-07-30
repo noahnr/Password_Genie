@@ -7,10 +7,10 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "Nr112098",
-    "database": "password_genie",
-    "host": "127.0.0.1",
+    "username": "exii2nmh8df0rkck",
+    "password": "lv067q39xf3c61h0",
+    "database": "r2521hhdx2hs1rn0",
+    "host": "tuy8t6uuvh43khkk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
