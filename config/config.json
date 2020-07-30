@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "h37e8zi94goili53",
-        "password": "l6jwjn4u431jykg3",
-        "database": "password_genie",
-        "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "username": "yrseq0nuz4j4lt1x",
+        "password": "gwck8zm9hy64ff2d",
+        "database": "vwvuahc3bfdipk1o",
+        "host": "tuy8t6uuvh43khkk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
     },
     "test": {
@@ -17,3 +17,4 @@
         "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
+}
