@@ -13,7 +13,7 @@ var passport = require("passport");
 // var mysql = requre("mysql")
 
 /// Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3306;
 var db = require("./models");
 // Set Handlebars.
 // var exphbs = require("express-handlebars");
@@ -41,7 +41,9 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(express.static("public"));
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({
+  defaultLayout: "main"
+}));
 app.set("view engine", "handlebars");
 // We need to use sessions to keep track of our user's login status
 app.use(session({
