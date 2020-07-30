@@ -13,7 +13,7 @@ var passport = require("passport");
 // var mysql = requre("mysql")
 
 /// Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 3306;
+var PORT = process.env.PORT || 8080;
 var db = require("./models");
 // Set Handlebars.
 // var exphbs = require("express-handlebars");
