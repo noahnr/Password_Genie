@@ -15,26 +15,9 @@ var passport = require("passport");
 /// Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
-// Set Handlebars.
-// var exphbs = require("express-handlebars");
-
-// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-// app.set("view engine", "handlebars");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
-
-//  if (process.env.JAWSDB_URL) {
-//    var connection = mysql.createConnection(process.env.JAWSDB_URL)
-//  } else{
-//  var connection = mysql.createConnection({
-//   host:'local host' ,
-//  user:'root',
-//   password:'password',   
-//   database:'password_genie'
-// });
-//  }
-//  connection.connect();
 
 app.use(express.urlencoded({
   extended: true

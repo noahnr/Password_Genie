@@ -23,7 +23,7 @@ $(document).ready(() => {
   });
 
   function saveNewSite(site, username, sPassword) {
-    $.post("api/new_site_data", {
+    $.post("/api/new_site_data", {
       site: site,
       username: username,
       sPassword, sPassword

@@ -49,12 +49,12 @@ module.exports = function(app) {
   });
 
   app.get("/api/new_site_data", function(req, res) {
-    db.findOne({
+    db.Site.findOne({
       where: {
         id: req.user.id
       }
     }).then(function (result) {
-      db.create({
+      db.Site.create({
         site: req.body.site,
         username: req.body.username,
         sPassword: req.body.sPassword
