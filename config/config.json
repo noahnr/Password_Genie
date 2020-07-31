@@ -1,20 +1,13 @@
 {
-    "development": {
-    "username": "root",
-    "password": "rootPASS7",
-    "database": "password_genie",
-    "host": "localhost",
-    "dialect": "mysql"
-},
-"test": {
+  "development": {
     "username": "root",
     "password": "Nr112098",
     "database": "password_genie",
     "host": "127.0.0.1",
     "dialect": "mysql"
-},
-"production": {
+  },
+  "production": {
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
-}
+  }
 }
