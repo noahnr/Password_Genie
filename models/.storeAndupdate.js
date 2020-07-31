@@ -18,7 +18,6 @@ var User = sequelize.define('storeAndupdate', {
     },
     email: DataTypes.STRING,
     password: DataTypes.STRING,
-
 }, {
     freezeTableName: true
 });
