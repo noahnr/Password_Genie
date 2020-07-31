@@ -67,7 +67,7 @@ button {
 }
 
 .navbar-brand img {
-    height: 2rem;
+    height: 1.4rem;
 }
 
 .custom-toggler-icon {
@@ -101,7 +101,7 @@ button {
 
 /*-- Fixed Landing Page Section --*/
 .home-inner {
-    background-image: url('../img/computers.jpg');
+    background-image: url('../img/pexels-burst-374857.jpg');
     position: fixed;
     width: 100%;
     height: 100%;
@@ -142,7 +142,7 @@ button {
 }
 
 .caption h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black;
     padding-bottom: 1rem;
@@ -296,7 +296,7 @@ h3.heading {
 
 /*-- Team Light Background Image --*/
 .fixed-light {
-    background-image: url('../img/fixed/office.jpg');
+    background-image: url('../img/contact.jpg');
     z-index: -1;
     position: fixed;
     width: 100%;
@@ -311,7 +311,7 @@ h3.heading {
 }
 
 .light {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .5);
     padding: 5rem 0;
     z-index: 1000 !important;
 }

@@ -47,4 +47,8 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/new_site_data", function(req, res) {
+    
+  })
 };
