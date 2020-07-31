@@ -1,5 +1,3 @@
-var bcrypt = require("bcryptjs");
-
 module.exports = function (sequelize, DataTypes) {
     var Site = sequelize.define("Site", {
         site: {
@@ -19,4 +17,5 @@ module.exports = function (sequelize, DataTypes) {
         }
 
     });
+    return Site;
 }
