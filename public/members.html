@@ -26,7 +26,28 @@
       </div>
     </div>
   </div>
-
+  <form class="signup">
+    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
+      <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="nameInput">Name:</label>
+      <input style="margin-top: 15px;" type="name" class="form-control" id="site-name-input" placeholder="Name">
+    </div>
+    <br>
+    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".5s">
+      <label class="os-animation" data-animation="bounceInUp" data-delay=".4s" for="exampleInputEmail1">Email address:</label>
+      <input style="margin-top: 15px;" type="email" class="form-control" id="site-uName" placeholder="Email">
+    </div>
+    <br>
+    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".7s">
+      <label class="os-animation" data-animation="bounceInUp" data-delay=".6s" for="exampleInputPassword1">Password:</label>
+      <input style="margin-top: 15px;" type="password" class="form-control" id="site-password" placeholder="Password">
+    </div>
+    <br>
+    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span> <span class="msg"></span>
+    </div>
+    <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp" data-delay=".8s">Sign Up</button>
+  </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
 
