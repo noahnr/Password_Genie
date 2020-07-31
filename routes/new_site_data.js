@@ -33,11 +33,14 @@ module.exports = function (app) {
             }).then(function () {
                 res.redirect("back");
             }).catch(function (err) {
+                console.log("it worked", req.body);
                 console.log("error", err);
                 // handle error;
             });
         })
     })
 
-    app.get("/api/new_site_data", function (req, res))
+    app.get("/api/new_site_data", function (req, res) {
+
+    });
 };
