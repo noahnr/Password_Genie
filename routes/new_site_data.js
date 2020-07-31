@@ -19,19 +19,25 @@ module.exports = function (app) {
         }
     });
 
-    app.get("/api/new_site_data", function (req, res) {
+    app.post("/api/new_site_data", function (req, res) {
         db.Site.findOne({
             where: {
                 id: req.user.id
             }
         }).then(function (result) {
+            console.log("req.body", req.body)
             db.Site.create({
                 site: req.body.site,
                 username: req.body.username,
                 sPassword: req.body.sPassword
             }).then(function () {
-                res.redirect(307, "/api/members");
-            })
+                res.redirect("back");
+            }).catch(function (err) {
+                console.log("error", err);
+                // handle error;
+            });
         })
     })
+
+    app.get("/api/new_site_data", function (req, res))
 };
