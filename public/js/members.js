@@ -4,6 +4,8 @@ $(document).ready(() => {
   var siteUname = $("#site-uName");
   var sitePass = $("#site-password");
 
+
+
   newSiteInfo.on("submit", function (event) {
     event.preventDefault();
     var newSite = {
@@ -27,33 +29,34 @@ $(document).ready(() => {
       site: site,
       username: username,
       sPassword: sPassword
-
     }).then(data => {
       $.get("/api/new_site_data").then(data => {
         console.log(data);
         console.log(data.siteRecords);
         for (var i = 0; i < data.siteRecords.length; i++) {
-          // create a parent div for the oncoming elements
-          var siteData = $("<tr>");
-          // add a class to this div: 'well'
-          siteData.addClass("newEntry");
-          // add an id to the well to mark which well it is
-          siteData.attr("id", "siteInfo" + i);
-          // append the well to the well section
-          $("#site-Data").append(siteData);
+          if (i === data.siteRecords.length - 1) {
+            // create a parent div for the oncoming elements
+            var siteData = $("<tr>");
+            // add a class to this div: 'well'
+            siteData.addClass("newEntry");
+            // add an id to the well to mark which well it is
+            siteData.attr("id", "siteInfo" + i);
+            // append the well to the well section
+            $("#site-Data").append(siteData);
 
-          // Now add all of our character data to the well we just placed on the page
+            // Now add all of our character data to the well we just placed on the page
 
-          // make the name an h2,
-          $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
-          // the role an h3,
-          $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
-          // the age an h3,
-          $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
-          $("#siteInfo").append("</tr>");
+            // make the name an h2,
+            $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
+            // the role an h3,
+            $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
+            // the age an h3,
+            $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
+            $("#siteInfo").append("</tr>");
+          }
         }
-      });
-    });
+      })
+    })
   }
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
@@ -61,7 +64,33 @@ $(document).ready(() => {
     $(".member-name").text(data.name);
   });
 
+  $.get("/api/new_site_data").then(data => {
+    console.log(data);
+    console.log(data.siteRecords);
+    for (var i = 0; i < data.siteRecords.length; i++) {
+      // create a parent div for the oncoming elements
+      var siteData = $("<tr>");
+      // add a class to this div: 'well'
+      siteData.addClass("newEntry");
+      // add an id to the well to mark which well it is
+      siteData.attr("id", "siteInfo" + i);
+      // append the well to the well section
+      $("#site-Data").append(siteData);
+
+      // Now add all of our character data to the well we just placed on the page
+
+      // make the name an h2,
+      $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
+      // the role an h3,
+      $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
+      // the age an h3,
+      $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
+      $("#siteInfo").append("</tr>");
+    }
+  });
 });
+
+
 
 
 
