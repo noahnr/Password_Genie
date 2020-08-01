@@ -1,0 +1,36 @@
+{
+  "name": "password_genie",
+  "version": "1.0.0",
+  "description": "This is a web application that will allow users to create an account with their information, and be able to log in and store user information for any login credentials they could have!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahnr/Password_Genie.git"
+  },
+  "author": "Journey Cruz, Christopher Carreon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahnr/Password_Genie/issues"
+  },
+  "homepage": "https://github.com/noahnr/Password_Genie#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "mysql2": "^1.7.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "6.2.0"
+  }
+}
