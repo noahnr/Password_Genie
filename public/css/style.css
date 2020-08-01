@@ -15,7 +15,7 @@ body {
 /*-- Lato Thin --*/
 #latoThin {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: none;
     bottom: 5%;
     position: relative;
@@ -296,7 +296,7 @@ h3.heading {
 
 /*-- Team Light Background Image --*/
 .fixed-light {
-    background-image: url('../img/contact.jpg');
+    background-image: url('../img/pexels-pixabay-459654.jpg');
     z-index: -1;
     position: fixed;
     width: 100%;
@@ -472,13 +472,9 @@ a.top-scroll:hover {
 
 /*============ MEMBERS PAGE =============*/
 
-#columnGroup {
-    width: 100%;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 8px;
+td {
+    margin: 5px solid black;
 }
-
 
 /*============= MEDIA QUERIES =============*/
 
