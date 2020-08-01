@@ -44,11 +44,11 @@ $(document).ready(() => {
 
           // Now add all of our character data to the well we just placed on the page
 
-          // make the name an h2,
+          // make the name an td,
           $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
-          // the role an h3,
+          // the role an td,
           $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
-          // the age an h3,
+          // the age an td,
           $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
           $("#siteInfo").append("</tr>");
         }
