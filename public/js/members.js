@@ -30,9 +30,11 @@ $(document).ready(() => {
 
     }).then(data => {
       $.get("/api/new_site_data").then(data => {
-        for (var i = 0; i < data.length; i++) {
+        console.log(data);
+        console.log(data.siteRecords);
+        for (var i = 0; i < data.siteRecords.length; i++) {
           // create a parent div for the oncoming elements
-          var siteData = $("<div>");
+          var siteData = $("<tr>");
           // add a class to this div: 'well'
           siteData.addClass("newEntry");
           // add an id to the well to mark which well it is
@@ -43,11 +45,12 @@ $(document).ready(() => {
           // Now add all of our character data to the well we just placed on the page
 
           // make the name an h2,
-          $("#siteInfo" + i).append("<h1>Site:" + data[i].site + "</h1>");
+          $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
           // the role an h3,
-          $("#siteInfo" + i).append("<h1>Username:" + data[i].username + "</h1>");
+          $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
           // the age an h3,
-          $("#siteInfo" + i).append("<h1>Password:" + data[i].sPassword + "</h1>");
+          $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
+          $("#siteInfo").append("</tr>");
         }
       });
     });
