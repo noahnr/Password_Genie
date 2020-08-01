@@ -2,55 +2,91 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Genie | Members Page</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <!-- Google Fonts Lato Thin -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
-  <nav class="navbar navbar-default">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top solid">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/logout">
-          Logout
-        </a>
+      <a class="navbar-brand" href="/"><img src="img/PasswordGenieLogo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+  <!-- End Navigation -->
   <div class="container">
+    <div class="row" style="height: 100px;">
+    </div>
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Welcome <span class="member-name"></span></h2>
       </div>
     </div>
   </div>
-  <form class="newSite">
-    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
-      <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="nameInput">Name:</label>
-      <input style="margin-top: 15px;" type="name" class="form-control" id="site-name-input" placeholder="Name">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 class="os-animation" data-animation="bounceInUp">What site would you like to store?</h2>
+        <br>
+        <form class="newSite">
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="nameInput">Website: </label>
+            <input style="margin-top: 15px;" type="name" class="form-control" id="site-name-input" placeholder="Website">
+          </div>
+          <br>
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".5s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".4s" for="exampleInputEmail1">Username:
+            </label>
+            <input style="margin-top: 15px;" type="name" class="form-control" id="site-uName" placeholder="Username">
+          </div>
+          <br>
+          <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".7s">
+            <label class="os-animation" data-animation="bounceInUp" data-delay=".6s"
+              for="exampleInputPassword1">Password: </label>
+            <input style="margin-top: 15px;" type="password" class="form-control" id="site-password"
+              placeholder="Password">
+          </div>
+          <br>
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp"
+            data-delay=".8s">Store this information</button>
+        </form>
+        <br>
+      </div>
     </div>
-    <br>
-    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".5s">
-      <label class="os-animation" data-animation="bounceInUp" data-delay=".4s" for="exampleInputEmail1">Email
-        address:</label>
-      <input style="margin-top: 15px;" type="name" class="form-control" id="site-uName" placeholder="Email">
-    </div>
-    <br>
-    <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".7s">
-      <label class="os-animation" data-animation="bounceInUp" data-delay=".6s"
-        for="exampleInputPassword1">Password:</label>
-      <input style="margin-top: 15px;" type="password" class="form-control" id="site-password" placeholder="Password">
-    </div>
-    <br>
-    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span class="sr-only">Error:</span> <span class="msg"></span>
-    </div>
-    <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp" data-delay=".8s">Sign
-      Up</button>
-  </form>
+    <div class="col-md-3"></div>
+  </div>
 
   <table>
     <colgroup>
@@ -66,6 +102,14 @@
   </table>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
+ <!-- jQuery -->
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script src="js/bootstrap.min.js"></script>
+ <!-- Popper JS -->
+ <script src="js/popper.min.js"></script>
+ <!-- Waypoints -->
+ <script src="js/jquery.waypoints.min.js"></script>
 
 </body>
 
