@@ -469,6 +469,17 @@ a.top-scroll:hover {
 #space {
     height: 150px;
 }
+
+/*============ MEMBERS PAGE =============*/
+
+#columnGroup {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 992px (lg) */
