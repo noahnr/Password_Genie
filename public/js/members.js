@@ -47,11 +47,11 @@ $(document).ready(() => {
             // Now add all of our character data to the well we just placed on the page
 
             // make the name an h2,
-            $("#siteInfo" + i).append("<td>Site: " + data.siteRecords[i].site + "</td>");
+            $("#siteInfo" + i).append("<td>" + data.siteRecords[i].site + "</td>");
             // the role an h3,
-            $("#siteInfo" + i).append("<td>Username: " + data.siteRecords[i].username + "</td>");
+            $("#siteInfo" + i).append("<td>" + data.siteRecords[i].username + "</td>");
             // the age an h3,
-            $("#siteInfo" + i).append("<td>Password: " + data.siteRecords[i].sPassword + "</td>");
+            $("#siteInfo" + i).append("<td>" + data.siteRecords[i].sPassword + "</td>");
             $("#siteInfo").append("</tr>");
           }
         }
@@ -80,11 +80,11 @@ $(document).ready(() => {
       // Now add all of our character data to the well we just placed on the page
 
       // make the name an h2,
-      $("#siteInfo" + i).append("<td>Site:" + data.siteRecords[i].site + "</td>");
+      $("#siteInfo" + i).append("<td>" + data.siteRecords[i].site + "</td>");
       // the role an h3,
-      $("#siteInfo" + i).append("<td>Username:" + data.siteRecords[i].username + "</td>");
+      $("#siteInfo" + i).append("<td>" + data.siteRecords[i].username + "</td>");
       // the age an h3,
-      $("#siteInfo" + i).append("<td>Password:" + data.siteRecords[i].sPassword + "</td>");
+      $("#siteInfo" + i).append("<td>" + data.siteRecords[i].sPassword + "</td>");
       $("#siteInfo").append("</tr>");
     }
   });

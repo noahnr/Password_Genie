@@ -8,7 +8,7 @@ var express = require("express");
 var session = require("express-session");
 const handlebars = require("handlebars");
 const exphbs = require("express-handlebars");
-require("dotenv").config();
+//require("dotenv").config();
 // Requiring passport as we've configured it
 var passport = require("passport");
 // var mysql = requre("mysql")

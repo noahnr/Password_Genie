@@ -24,7 +24,15 @@
 
 
 <body>
+  <style>
+    body {
+      background-color: #2A5B6D;
+    }
 
+    .whiteText {
+      color: white;
+    }
+  </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top solid">
     <div class="container-fluid">
@@ -42,24 +50,25 @@
     </div>
   </nav>
   <!-- End Navigation -->
-  <div class="container">
+  <div class="container whiteText">
     <div class="row" style="height: 100px;">
     </div>
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+        <h2>Welcome, <span class="member-name"></span></h2>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container whiteText">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2 class="os-animation" data-animation="bounceInUp">What site would you like to store?</h2>
+      <div class="col-md-7">
+        <h2 class="os-animation" data-animation="bounceInUp">Enter the credentials you would like to save:</h2>
         <br>
         <form class="newSite">
           <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".3s">
             <label class="os-animation" data-animation="bounceInUp" data-delay=".2s" for="nameInput">Website: </label>
-            <input style="margin-top: 15px;" type="name" class="form-control" id="site-name-input" placeholder="Website">
+            <input style="margin-top: 15px;" type="name" class="form-control" id="site-name-input"
+              placeholder="Website">
           </div>
           <br>
           <div class="form-group os-animation" data-animation="bounceInUp" data-delay=".5s">
@@ -80,36 +89,49 @@
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
           <button type="submit" class="btn btn-nuno btn-sm os-animation" data-animation="bounceInUp"
-            data-delay=".8s">Store this information</button>
+            data-delay=".8s">Save</button>
         </form>
         <br>
       </div>
     </div>
     <div class="col-md-3"></div>
   </div>
-
-  <table class="startTable">
-    <colgroup id="columnGroup">
-
-      <col style="border: thin; width: 33.3%;"/>
-      <col style="width: 33.3%; background-color: lightgray;"/>
-      <col style="border: thin; width: 33.3%;"/>
-
-    </colgroup>
-    <tbody id="site-Data">
-
-    </tbody>
-  </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        <table class="startTable table table-dark">
+          <colgroup id="siteCol">
+            <col style=" border: thin; width: 100%;" />
+          </colgroup>
+          <colgroup id="userCol">
+            <col style="width: 100%; background-color: #40474d;" />
+          </colgroup>
+          <colgroup id="passCol">
+            <col style="border: thin; width: 100%;" />
+          </colgroup>
+          <tbody id="site-Data">
+            <tr>
+              <th>Website:</th>
+              <th>Username:</th>
+              <th>Password:</th>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
- <!-- jQuery -->
- <script src="js/jquery-3.4.1.min.js"></script>
- <!-- Bootstrap JS -->
- <script src="js/bootstrap.min.js"></script>
- <!-- Popper JS -->
- <script src="js/popper.min.js"></script>
- <!-- Waypoints -->
- <script src="js/jquery.waypoints.min.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Popper JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
 
 </body>
 
