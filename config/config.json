@@ -1,6 +1,6 @@
-module.exports = {
 
-  "development": {
+{
+    "development": {
     "username": "root",
     "password": "rootPASS7",
     "database": "Password_Genie",
