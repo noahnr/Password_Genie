@@ -23,8 +23,7 @@ To use the password generator on the landing page simply click the 'Generate Pas
 
 ## Notes
 
-This application is still in version 1.0.0 and has a few bugs we plan to fix in the comi
-ng weeks. At this time, the database that a user accesses after logging in is not unique. We plan to add a filter to the data query t
+This application is still in version 1.0.0 and has a few bugs we plan to fix in the coming weeks. At this time, the database that a user accesses after logging in is not unique. We plan to add a filter to the data query t
 hat will only find data stored by the id of the user currently logged in. Next, we would like to add the Bcrpyt hasher to the usernam
 e and password information stored on the members page of the site. 
             
