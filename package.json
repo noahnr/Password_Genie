@@ -19,7 +19,7 @@
   "homepage": "https://github.com/noahnr/Password_Genie#readme",
   "devDependencies": {
     "eslint": "^7.6.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
